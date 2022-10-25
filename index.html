@@ -18,8 +18,61 @@
   </head>
 
   <body>
+    <header class="primary-header"></header>
+
     <main>
-      <header class="primary-header"></header>
+      <nav class="primary-nav">
+        <ol>
+          <li><a href="">Intro</a></li>
+          <li><a href="">Skills</a></li>
+          <li><a href="">CV</a></li>
+          <li><a href="">Contact</a></li>
+        </ol>
+      </nav>
+
+      <section class="intro">
+        <h1>Wes Keiser</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis
+          vitae facere obcaecati temporibus, in beatae tempore cumque dolore
+          molestias numquam aspernatur explicabo reprehenderit at quaerat
+          facilis fuga voluptates itaque pariatur quod. Aperiam expedita non
+          consequatur, sequi dolor explicabo optio, ullam modi ipsam quisquam
+          eveniet voluptate. Magni in atque dicta. Tempora!
+        </p>
+      </section>
+
+      <fieldset class="cv">
+        <legend>Title</legend>
+
+        <div>
+          <div class="cv_item_toggle">
+            <input
+              id="cv_education"
+              type="radio"
+            />
+            <label
+              for="cv_education"
+              id="test1"
+            >
+              Education</label
+            >
+          </div>
+
+          <p>eduaction</p>
+        </div>
+
+        <div>
+          <div class="cv_item_toggle">
+            <input
+              id="cv_experience"
+              type="radio"
+            />
+            <label for="cv_experience">Experience</label>
+          </div>
+          <p>experience</p>
+        </div>
+      </fieldset>
     </main>
   </body>
 </html>
