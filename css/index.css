@@ -177,15 +177,22 @@ a {
 }
 .primary-nav > ol > li {
   border-inline: 1px solid var(--accent-grey);
-  height: 2em;
+  height: 2.5em;
   display: flex;
+}
+.primary-nav > ol > li:first-of-type {
+  border-left: 0;
+}
+.primary-nav > ol > li:last-of-type {
+  border-right: 0;
 }
 .primary-nav > ol > li > a {
   margin: auto;
 }
 
 .intro {
-  padding-top: 2em;
+  padding-top: 1.5em;
+  border-left: 3em ridge var(--accent-green);
 }
 .intro > h1 {
   font-size: 2em;
@@ -196,11 +203,59 @@ a {
 .intro > p {
   padding-inline: 0.5em;
   padding-block: 1em;
+  border-bottom: 0.5em outset var(--accent-green);
+  padding-bottom: 1.5em;
 }
 
 .cv {
-  display: flex;
+  display: grid;
+  --cv-row-height: 2.6em;
 }
-.cv > div:focus-within > p {
-  background-color: red;
+.cv :nth-child(2) label {
+  border-top: 0;
+}
+.cv :nth-child(3) p {
+  margin-top: calc(var(--cv-row-height) * -1);
+}
+.cv :nth-child(4) p {
+  margin-top: calc(var(--cv-row-height) * -2);
+}
+.cv legend {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  padding-block: 0.2em;
+  text-align: center;
+  background-color: var(--accent-green);
+  width: 100%;
+}
+.cv_elements {
+  display: grid;
+  grid-template-columns: 1fr 7em;
+  grid-template-rows: var(--cv-row-height);
+  padding-left: 0.5em;
+}
+.cv_elements > input,
+.cv_elements label {
+  grid-row: 1;
+  grid-column: 2;
+  margin-left: auto;
+  background: var(--accent-green);
+  text-align: center;
+  min-width: 6em;
+  padding-top: 0.8em;
+}
+.cv_elements > label {
+  border-block: 1px solid var(--accent-grey);
+}
+.cv_elements > input {
+  opacity: 0%;
+  cursor: pointer;
+}
+.cv_elements > input:checked ~ p {
+  display: inline-block;
+}
+.cv_elements > p {
+  grid-row: 1;
+  display: none;
+  transition: all 0.3s ease 0s;
 }/*# sourceMappingURL=index.css.map */

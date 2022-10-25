@@ -173,8 +173,16 @@ a {
 
     & > li {
       border-inline: 1px solid var(--accent-grey);
-      height: 2em;
+      height: 2.5em;
       display: flex;
+
+      &:first-of-type {
+        border-left: 0;
+      }
+
+      &:last-of-type {
+        border-right: 0;
+      }
 
       & > a {
         margin: auto;
@@ -184,7 +192,8 @@ a {
 }
 
 .intro {
-  padding-top: 2em;
+  padding-top: 1.5em;
+  border-left: 3em ridge var(--accent-green);
 
   & > h1 {
     font-size: 2em;
@@ -196,15 +205,79 @@ a {
   & > p {
     padding-inline: 0.5em;
     padding-block: 1em;
+    border-bottom: 0.5em outset var(--accent-green);
+    padding-bottom: 1.5em;
   }
 }
 
 .cv {
-  display: flex;
+  display: grid;
 
-  & > div:focus-within {
+  --cv-row-height: 2.6em;
+
+  :nth-child(2) {
+    label {
+      border-top: 0;
+      // border-radius: 1em 0 0 0;
+    }
+  }
+
+  :nth-child(3) {
+    p {
+      margin-top: calc(var(--cv-row-height) * -1);
+    }
+  }
+
+  :nth-child(4) {
+    p {
+      margin-top: calc(var(--cv-row-height) * -2);
+    }
+  }
+
+  legend {
+    font-size: 1.8em;
+    text-transform: uppercase;
+    padding-block: 0.2em;
+    text-align: center;
+    background-color: var(--accent-green);
+    width: 100%;
+  }
+
+  &_elements {
+    display: grid;
+    grid-template-columns: 1fr 7em;
+    grid-template-rows: var(--cv-row-height);
+    padding-left: 0.5em;
+
+    & > input,
+    label {
+      grid-row: 1;
+      grid-column: 2;
+      margin-left: auto;
+      background: var(--accent-green);
+      text-align: center;
+      min-width: 6em;
+      padding-top: 0.8em;
+    }
+
+    & > label {
+      border-block: 1px solid var(--accent-grey);
+    }
+
+    & > input {
+      opacity: 0%;
+      cursor: pointer;
+
+      &:checked ~ p {
+        // outline: 5px solid green;
+        display: inline-block;
+      }
+    }
+
     & > p {
-      background-color: red;
+      grid-row: 1;
+      display: none;
+      transition: all 0.3s ease 0s;
     }
   }
 }
