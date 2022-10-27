@@ -141,6 +141,7 @@ table {
   --accent-white: #ffffff;
   --accent-grey: #252525;
   --accent-green: #19bb07;
+  --accent-green-dark: #107c04;
 }
 
 body {
@@ -164,19 +165,27 @@ a {
 .primary-header {
   height: 3em;
 }
+.primary-header > h1 {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin-block: 0.5em;
+}
 
 .primary-nav {
   background-color: var(--accent-green);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  grid-column: 2;
 }
 .primary-nav > ol {
   display: grid;
   grid-auto-flow: column;
 }
 .primary-nav > ol > li {
-  border-inline: 1px solid var(--accent-grey);
+  border-inline: 2px solid var(--accent-green-dark);
   height: 2.5em;
   display: flex;
 }
@@ -190,26 +199,34 @@ a {
   margin: auto;
 }
 
-.intro {
-  padding-top: 1.5em;
-  border-left: 3em ridge var(--accent-green);
+.style-wrapper_intro {
+  display: grid;
+  grid-template-columns: 3em 1fr;
 }
-.intro > h1 {
-  font-size: 2em;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
+
+.intro_pipe {
+  grid-column: 1;
+  grid-row: 1/3;
+  width: 3em;
+  background: radial-gradient(circle at center top, transparent -25%, rgba(0, 65, 3, 0.752) -5%, transparent 25% 80px), linear-gradient(to right, rgb(54, 109, 49), rgb(140, 213, 130) 25% 40%, rgb(9, 50, 5));
+  box-shadow: 0em 2em 2em -1em rgb(3, 52, 10) inset;
+}
+
+.intro {
+  grid-column: 2;
 }
 .intro > p {
   padding-inline: 0.5em;
-  padding-block: 1em;
+  background-color: var(--accent-grey);
+  padding-block: 0.1em;
   border-bottom: 0.5em outset var(--accent-green);
   padding-bottom: 1.5em;
 }
 
 .cv {
   display: grid;
-  --cv-row-height: 2.6em;
+  padding-bottom: 0.4em;
+  --cv-row-height: 4em;
 }
 .cv :nth-child(2) label {
   border-top: 0;
@@ -241,21 +258,28 @@ a {
   margin-left: auto;
   background: var(--accent-green);
   text-align: center;
-  min-width: 6em;
-  padding-top: 0.8em;
+  min-width: 3.5em;
 }
 .cv_elements > label {
-  border-block: 1px solid var(--accent-grey);
+  border-block: 2px solid var(--accent-green-dark);
+}
+.cv_elements > label > img {
+  width: 2em;
+  aspect-ratio: 1/2;
+  filter: invert(100%);
+  cursor: pointer;
 }
 .cv_elements > input {
   opacity: 0%;
-  cursor: pointer;
 }
 .cv_elements > input:checked ~ p {
   display: inline-block;
 }
 .cv_elements > p {
-  grid-row: 1;
   display: none;
-  transition: all 0.3s ease 0s;
+  margin-top: 0.8em;
+}
+
+.scr-only {
+  display: none;
 }/*# sourceMappingURL=index.css.map */
