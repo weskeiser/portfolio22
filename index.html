@@ -18,7 +18,12 @@
   </head>
 
   <body>
-    <header class="primary-header">
+    <header class="header-primary">
+      <div class="header-primary_pipe_wrapper">
+        <div class="header-primary_pipe">
+          <div class="header-primary_pipe_connect"></div>
+        </div>
+      </div>
       <h1>Wes Keiser</h1>
     </header>
 
@@ -49,94 +54,23 @@
         </section>
       </div>
 
-      <style>
-        .pipe-neck {
-          width: 10em;
-          height: 50em;
-
-          background:
-        /* radial-gradient(
-            circle at center top,
-            rgb(0, 29, 0) -20%,
-            transparent 100px
-          ), */
-          /* radial-gradient(
-            circle at center top,
-            rgb(0, 29, 0) -20%,
-            transparent 100px
-          ), */ radial-gradient(
-              circle at center top,
-              transparent -25%,
-              rgba(0, 65, 3, 0.752) -5%,
-              transparent 25% 80px
-            ),
-            linear-gradient(
-              to right,
-              rgb(54, 109, 49),
-              rgb(140, 213, 130) 25% 40%,
-              rgb(9, 50, 5)
-            );
-
-          box-shadow: 0em 2em 2em -1em rgb(3, 52, 10) inset;
-        }
-
-        .pipe-hat {
-          width: 12.5em;
-          /* border: 1px solid red; */
-          height: 2.5em;
-
-          background: linear-gradient(
-            to right,
-            rgb(54, 109, 49),
-            rgb(140, 213, 130) 25% 35%,
-            rgb(9, 50, 5)
-          );
-          border-radius: 0.2em;
-          /* box-shadow: 1em 1em 3em #000;
-        z-index: 1; */
-
-          position: relative;
-        }
-
-        .pipe-hat > div {
-          /* border: 1px solid red; */
-          height: 0.2em;
-          position: absolute;
-          top: 5%;
-          width: 100%;
-          background: linear-gradient(
-            90deg,
-            transparent 5%,
-            rgba(255, 255, 255, 0.563) 20% 22%,
-            transparent 50%
-          );
-        }
-
-        .pipe-wrapper {
-          display: flex;
-          flex-flow: column wrap;
-          align-items: center;
-        }
-
-        /* Lek */
-        .thisElement {
-          opacity: 1;
-          animation-name: myanimation;
-          animation-duration: 1s;
-          animation-iteration-count: infinite;
-          animation-direction: alternate;
-          /* Kan også skrive det i en prop: "animation", f.eks. slik: */
-          /* animation: myanimation 1s forwards; */
-        }
-        @keyframes myanimation {
-          from {
-            opacity: 0;
-          }
-        }
-      </style>
-
       <fieldset class="cv">
-        <legend>Title</legend>
+        <legend class="scr-only">Title</legend>
+        <div class="cv_pipe">
+          <div
+            class="cv_pipe_hz_connect-left"
+            aria-disabled="true"
+          ></div>
+          <div
+            class="cv_pipe_hz_divider"
+            aria-disabled="true"
+          ></div>
+          <div
+            class="cv_pipe_hz"
+            aria-disabled="true"
+          ></div>
+          <h2>Title</h2>
+        </div>
 
         <div class="cv_elements">
           <input
