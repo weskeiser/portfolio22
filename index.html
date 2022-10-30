@@ -13,34 +13,47 @@
     <title>Wes Keiser</title>
     <link
       rel="stylesheet"
+      href="css/css-reset.css"
+    />
+    <link
+      rel="stylesheet"
       href="./css/index.css"
     />
   </head>
 
   <body>
     <header class="header-primary">
-      <div class="header-primary_pipe_wrapper">
-        <div class="header-primary_pipe">
-          <div class="header-primary_pipe_connect"></div>
+      <img
+        class="piranha_plant"
+        src="./images/clipart767015.png"
+        alt=""
+      />
+
+      <div class="header-primary_pipe_end_wrapper">
+        <div class="header-primary_pipe_end">
+          <div class="header-primary_pipe_end_connect"></div>
         </div>
       </div>
+
+      <div class="header-primary_pipe"></div>
+
       <h1>Wes Keiser</h1>
     </header>
+
+    <nav class="primary-nav">
+      <ol>
+        <li><a href="">Intro</a></li>
+        <li><a href="">Skillz</a></li>
+        <li><a href="">CV</a></li>
+        <li><a href="">Contact</a></li>
+      </ol>
+    </nav>
 
     <main>
       <div class="style-wrapper_intro">
         <div class="intro_pipe">
           <div class="intro_pipe_body"></div>
         </div>
-
-        <nav class="primary-nav">
-          <ol>
-            <li><a href="">Intro</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">CV</a></li>
-            <li><a href="">Contact</a></li>
-          </ol>
-        </nav>
 
         <section class="intro">
           <p>
@@ -55,7 +68,7 @@
       </div>
 
       <fieldset class="cv">
-        <legend class="scr-only">Title</legend>
+        <legend class="scr-only">Skills</legend>
         <div class="cv_pipe">
           <div
             class="cv_pipe_hz_connect-left"
@@ -69,10 +82,11 @@
             class="cv_pipe_hz"
             aria-disabled="true"
           ></div>
-          <h2>Title</h2>
+          <h2>Skillz</h2>
         </div>
 
         <div class="cv_elements">
+          <div class="cv_elements_divider"></div>
           <input
             id="cv_education"
             type="radio"
@@ -80,7 +94,7 @@
             checked="true"
           />
           <label for="cv_education">
-            <span class="scr-only">Education</span>
+            <span class="scr-only"> Education </span>
 
             <img
               alt="todo"
@@ -89,24 +103,25 @@
             />
           </label>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-            vero, quisquam culpa mollitia sequi quasi eveniet maxime? Rem,
-            reiciendis mollitia alias, optio at deserunt similique
-            exercitationem porro nesciunt, cum quas ratione? Quisquam earum
-            ipsam veritatis, assumenda quas maiores praesentium adipisci
-            blanditiis voluptates iusto reprehenderit soluta harum vitae iure
-            deleniti quod.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            fugiat asperiores maxime blanditiis velit id dicta dolorum,
+            assumenda at laudantium inventore sapiente quasi dolore praesentium
+            laborum nobis modi reprehenderit accusantium, dolorem dolor in
+            molestiae numquam? Rerum nulla nam enim unde ab. Excepturi molestias
+            quae, consequuntur exercitationem asperiores corrupti laborum totam!
           </p>
         </div>
 
         <div class="cv_elements">
+          <div class="cv_elements_divider"></div>
           <input
             id="cv_experience"
             type="radio"
             name="cv_radio"
           />
-          <label for="cv_experience"
-            ><span class="scr-only">Experience</span>
+          <label for="cv_experience">
+            <span class="scr-only"> Experience </span>
+
             <img
               src="./images/briefcase-svgrepo-com.svg"
               alt=""
@@ -117,19 +132,34 @@
         </div>
 
         <div class="cv_elements">
+          <div class="cv_elements_divider"></div>
           <input
             id="cv_temp101010"
             type="radio"
             name="cv_radio"
           />
-          <label for="cv_temp101010"
-            ><img
+          <label for="cv_temp101010">
+            <span class="scr-only"> Temp </span>
+
+            <img
               src="./images/warp-pipe.svg"
               alt=""
-          /></label>
+            />
+          </label>
           <p>temptemptemp</p>
         </div>
+        <div class="cv_elements_divider_last"></div>
       </fieldset>
     </main>
+
+    <footer>
+      <div class="footer-spacer"></div>
+
+      <div class="footer_container">
+        <div class="footer-border-1"></div>
+        <div class="footer-border-2"></div>
+        <div class="test2"></div>
+      </div>
+    </footer>
   </body>
 </html>
