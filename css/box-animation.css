@@ -1,0 +1,80 @@
+@-webkit-keyframes box-first {
+  16.5% {
+    margin-top: 0.5em;
+  }
+  18% {
+    margin-top: -2em;
+  }
+  20.5% {
+    margin-top: 0.5em;
+  }
+  23% {
+    margin-top: 0.5em;
+  }
+  24.5% {
+    margin-top: -2em;
+  }
+  27% {
+    margin-top: 0.5em;
+  }
+}
+@keyframes box-first {
+  16.5% {
+    margin-top: 0.5em;
+  }
+  18% {
+    margin-top: -2em;
+  }
+  20.5% {
+    margin-top: 0.5em;
+  }
+  23% {
+    margin-top: 0.5em;
+  }
+  24.5% {
+    margin-top: -2em;
+  }
+  27% {
+    margin-top: 0.5em;
+  }
+}
+@-webkit-keyframes box-second {
+  34.5% {
+    margin-top: 0.5em;
+  }
+  36% {
+    margin-top: -2em;
+  }
+  38.5% {
+    margin-top: 0.5em;
+  }
+  42% {
+    margin-top: 0.5em;
+  }
+  43.5% {
+    margin-top: -2em;
+  }
+  46% {
+    margin-top: 0.5em;
+  }
+}
+@keyframes box-second {
+  34.5% {
+    margin-top: 0.5em;
+  }
+  36% {
+    margin-top: -2em;
+  }
+  38.5% {
+    margin-top: 0.5em;
+  }
+  42% {
+    margin-top: 0.5em;
+  }
+  43.5% {
+    margin-top: -2em;
+  }
+  46% {
+    margin-top: 0.5em;
+  }
+}/*# sourceMappingURL=box-animation.css.map */

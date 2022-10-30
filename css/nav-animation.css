@@ -1,0 +1,104 @@
+@-webkit-keyframes nav-contact {
+  0% {
+    opacity: 0;
+  }
+  17% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  18% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes nav-contact {
+  0% {
+    opacity: 0;
+  }
+  17% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  18% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes nav-cv {
+  0% {
+    opacity: 0;
+  }
+  24% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  25% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes nav-cv {
+  0% {
+    opacity: 0;
+  }
+  24% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  25% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes nav-skillz {
+  0% {
+    opacity: 0;
+  }
+  34% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  35% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes nav-skillz {
+  0% {
+    opacity: 0;
+  }
+  34% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  35% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes nav-intro {
+  0% {
+    opacity: 0;
+  }
+  42.5% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  43% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes nav-intro {
+  0% {
+    opacity: 0;
+  }
+  42.5% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  43% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=nav-animation.css.map */

@@ -1,0 +1,323 @@
+@keyframes super-wes {
+  from {
+    top: -3em;
+    right: 3em;
+  }
+
+  // First landing
+  6% {
+    top: var(--header-floor);
+    transform: scalex(-1);
+  }
+  6.1% {
+    transform: scalex(1);
+  }
+
+  10% {
+    transform: scalex(1);
+  }
+  10.1% {
+    transform: scalex(-1);
+  }
+
+  // Pause
+  13% {
+    transform: scalex(-1);
+  }
+
+  14% {
+    top: var(--header-floor);
+  }
+
+  // first jump
+  16% {
+    top: var(--header-floor);
+    right: 3em;
+  }
+
+  // landing
+  18% {
+    top: 1.5em;
+    right: 8em;
+  }
+
+  // return
+  21% {
+    top: var(--header-floor);
+    right: 8em;
+  }
+
+  // second jump
+  22% {
+    top: var(--header-floor);
+    right: 8em;
+  }
+
+  // landing
+  25% {
+    top: 1.5em;
+    right: 8em;
+  }
+
+  // return
+  28% {
+    top: var(--header-floor);
+    right: 8em;
+    transform: scalex(-1);
+  }
+
+  28.1% {
+    transform: scalex(1);
+  }
+
+  32% {
+    top: var(--header-floor);
+    right: 8em;
+    transform: scalex(1);
+  }
+
+  33% {
+    top: var(--header-floor);
+    right: 8em;
+    transform: scalex(1);
+  }
+
+  33.1% {
+    transform: scalex(-1);
+  }
+
+  // third jump
+  36% {
+    top: 1.5em;
+    right: 13em;
+  }
+
+  // landing
+  39% {
+    top: var(--header-floor);
+    right: 13em;
+    transform: scalex(1);
+  }
+
+  41% {
+    top: var(--header-floor);
+    right: 13em;
+  }
+
+  // fourth jump
+  43% {
+    top: 1.5em;
+    right: 13em;
+  }
+
+  // landing
+  46% {
+    top: var(--header-floor);
+    right: 13em;
+    transform: scalex(1);
+  }
+
+  49% {
+    top: var(--header-floor);
+    right: 13em;
+  }
+
+  51% {
+    right: 16em;
+  }
+
+  53% {
+    right: 16em;
+    transform: scalex(1);
+  }
+
+  53.1% {
+    transform: scalex(-1);
+    transform: rotate(0deg);
+    top: var(--header-floor);
+  }
+
+  59% {
+    top: -2.5em;
+    right: 20.5em;
+    transform: rotate(-180deg);
+  }
+
+  // vw for screensizes
+
+  60% {
+    top: 6em;
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    top: 6em;
+    right: 20.5em;
+    transform: rotate(-180deg);
+  }
+}
+
+@keyframes still {
+  16% {
+    opacity: 1;
+  }
+
+  16.1% {
+    opacity: 0;
+  }
+
+  19% {
+    opacity: 0;
+  }
+
+  19.1% {
+    opacity: 1;
+  }
+
+  22% {
+    opacity: 1;
+  }
+
+  22.1% {
+    opacity: 0;
+  }
+
+  26% {
+    opacity: 0;
+  }
+
+  26.1% {
+    opacity: 1;
+  }
+
+  33% {
+    opacity: 1;
+  }
+
+  33.1% {
+    opacity: 0;
+  }
+
+  37% {
+    opacity: 0;
+  }
+
+  37.1% {
+    opacity: 1;
+  }
+
+  41% {
+    opacity: 1;
+  }
+
+  41.1% {
+    opacity: 0;
+  }
+
+  44% {
+    opacity: 0;
+  }
+
+  44.1% {
+    opacity: 1;
+  }
+
+  53% {
+    opacity: 1;
+  }
+
+  53.1% {
+    opacity: 0;
+  }
+
+  59% {
+    opacity: 0;
+  }
+
+  59.1% {
+    opacity: 1;
+  }
+}
+
+@keyframes jump {
+  16% {
+    opacity: 0;
+  }
+
+  16.1% {
+    opacity: 1;
+  }
+
+  19% {
+    opacity: 1;
+  }
+
+  19.1% {
+    opacity: 0;
+  }
+
+  22% {
+    opacity: 0;
+  }
+
+  22.1% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 1;
+  }
+
+  26.1% {
+    opacity: 0;
+  }
+
+  33% {
+    opacity: 0;
+  }
+
+  33.1% {
+    opacity: 1;
+  }
+
+  37% {
+    opacity: 1;
+  }
+
+  37.1% {
+    opacity: 0;
+  }
+
+  41% {
+    opacity: 0;
+  }
+
+  41.1% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 1;
+  }
+
+  44.1% {
+    opacity: 0;
+  }
+
+  53% {
+    opacity: 0;
+  }
+
+  53.1% {
+    opacity: 1;
+  }
+
+  59% {
+    opacity: 1;
+  }
+
+  59.1% {
+    opacity: 0;
+  }
+}
