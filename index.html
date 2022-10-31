@@ -19,55 +19,128 @@
       rel="stylesheet"
       href="./css/index.css"
     />
+    <link
+      rel="stylesheet"
+      href="./css/nav-animation.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/wes-animation.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/box-animation.css"
+    />
   </head>
 
   <body>
-    <header class="header-primary">
+    <header class="header">
       <img
-        class="piranha_plant"
-        src="./images/clipart767015.png"
+        class="header_jump-block header_jump-block-first"
+        src="./images/brick-wall.svg"
         alt=""
       />
 
-      <div class="header-primary_pipe_end_wrapper">
-        <div class="header-primary_pipe_end">
-          <div class="header-primary_pipe_end_connect"></div>
+      <img
+        class="header_jump-block header_jump-block-second"
+        src="./images/brick-wall.svg"
+        alt=""
+      />
+
+      <div class="header_entry-pipe"></div>
+
+      <div class="super-wes">
+        <img
+          class="super-wes_still"
+          src="./images/Super-wes-still.png"
+          alt=""
+        />
+        <img
+          class="super-wes_jump"
+          src="./images/Super-wes-jump.png"
+          alt=""
+        />
+      </div>
+
+      <div class="header_pipe_end_wrapper">
+        <div class="header_pipe_end">
+          <div class="header_pipe_end_connect"></div>
         </div>
       </div>
 
-      <div class="header-primary_pipe"></div>
+      <div class="header_pipe"></div>
 
       <h1>Wes Keiser</h1>
     </header>
 
     <nav class="primary-nav">
       <ol>
-        <li><a href="">Intro</a></li>
-        <li><a href="">Skillz</a></li>
-        <li><a href="">CV</a></li>
-        <li><a href="">Contact</a></li>
+        <li>
+          <a
+            id="nav-intro"
+            href="#intro"
+            >Intro</a
+          >
+        </li>
+        <li>
+          <a
+            id="nav-skillz"
+            href="#skills"
+            >Skillz</a
+          >
+        </li>
+        <li>
+          <a
+            id="nav-cv"
+            href="#skills"
+            >CV</a
+          >
+        </li>
+        <li>
+          <a
+            id="nav-contact"
+            href="#contact"
+            >Contact</a
+          >
+        </li>
       </ol>
     </nav>
 
     <main>
-      <div class="style-wrapper_intro">
-        <div class="intro_pipe">
-          <div class="intro_pipe_body"></div>
+      <div
+        id="intro"
+        class="intro_wrapper"
+      >
+        <div class="intro_pipe-left"></div>
+
+        <div class="intro_super-wes">
+          <img
+            src="./images/Super-wes-jump.png"
+            alt=""
+            class="intro_super-wes-jump"
+          />
+          <img
+            src="./images/Super-wes-still.png"
+            alt=""
+            class="intro_super-wes-still"
+          />
         </div>
 
-        <section class="intro">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Perspiciatis vitae facere obcaecati temporibus, in beatae tempore
-            cumque dolore molestias numquam aspernatur explicabo reprehenderit
-            at quaerat facilis fuga voluptates itaque pariatur quod. Aperiam
-            expedita non consequatur, sequi dolor explicabo optio, ullam modi
-            ipsam quisquam eveniet voluptate. Magni in atque dicta. Tempora!
-          </p>
-        </section>
+        <ul class="intro_text">
+          <li>Vim fanatic</li>
+          <li>Keymap geek</li>
+          <li>Coding fiend</li>
+        </ul>
+
+        <div class="intro_pipe-exit">
+          <div></div>
+        </div>
       </div>
 
-      <fieldset class="cv">
+      <fieldset
+        id="skills"
+        class="cv"
+      >
         <legend class="scr-only">Skills</legend>
         <div class="cv_pipe">
           <div
@@ -88,6 +161,77 @@
         <div class="cv_elements">
           <div class="cv_elements_divider"></div>
           <input
+            id="cv_experience"
+            type="radio"
+            name="cv_radio"
+          />
+          <label for="cv_experience">
+            <span class="scr-only"> Experience </span>
+
+            <img
+              src="./images/briefcase-svgrepo-com.svg"
+              alt=""
+              aria-disabled="true"
+            />
+          </label>
+
+          <div
+            class="skillz_content"
+            title="Skills"
+          >
+            <table
+              title="Primary skills"
+              class="skillz_content_experience"
+            >
+              <tr>
+                <th>Proficient in</th>
+              </tr>
+              <tr>
+                <td>HTML</td>
+              </tr>
+              <tr>
+                <td>CSS/SCSS</td>
+              </tr>
+              <tr>
+                <td>JavaScript/TypeScript</td>
+              </tr>
+              <tr>
+                <td>React.js</td>
+              </tr>
+              <tr>
+                <td>Linux/Terminal</td>
+              </tr>
+            </table>
+
+            <table
+              title="Secondary skills"
+              class="skillz_content_experience"
+            >
+              <tr>
+                <th>Dabbled in</th>
+              </tr>
+              <tr>
+                <td>Git</td>
+              </tr>
+              <tr>
+                <td>Lua</td>
+              </tr>
+              <tr>
+                <td>MySQL</td>
+              </tr>
+              <tr>
+                <td>Node.js</td>
+              </tr>
+              <tr>
+                <td>Next.js</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="cv_elements">
+          <div class="cv_elements_divider"></div>
+          <input
             id="cv_education"
             type="radio"
             name="cv_radio"
@@ -102,33 +246,32 @@
               aria-disabled="true"
             />
           </label>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            fugiat asperiores maxime blanditiis velit id dicta dolorum,
-            assumenda at laudantium inventore sapiente quasi dolore praesentium
-            laborum nobis modi reprehenderit accusantium, dolorem dolor in
-            molestiae numquam? Rerum nulla nam enim unde ab. Excepturi molestias
-            quae, consequuntur exercitationem asperiores corrupti laborum totam!
-          </p>
-        </div>
 
-        <div class="cv_elements">
-          <div class="cv_elements_divider"></div>
-          <input
-            id="cv_experience"
-            type="radio"
-            name="cv_radio"
-          />
-          <label for="cv_experience">
-            <span class="scr-only"> Experience </span>
+          <div class="skillz_content">
+            <table class="skillz_content_education">
+              <caption>
+                Education
+              </caption>
 
-            <img
-              src="./images/briefcase-svgrepo-com.svg"
-              alt=""
-              aria-disabled="true"
-            />
-          </label>
-          <p>experience</p>
+              <tr>
+                <th colspan="2">Experis Academy</th>
+              </tr>
+
+              <tr>
+                <td>10/2022 - 04/2023</td>
+                <td>Fullstack Java</td>
+              </tr>
+
+              <tr>
+                <th colspan="2">Jessheim VGS</th>
+              </tr>
+
+              <tr>
+                <td>08/2010 - 06/2013</td>
+                <td>High School</td>
+              </tr>
+            </table>
+          </div>
         </div>
 
         <div class="cv_elements">
@@ -146,7 +289,15 @@
               alt=""
             />
           </label>
-          <p>temptemptemp</p>
+
+          <div class="skillz_content skillz_content_easter-egg">
+            <h2>How did you find this easter egg..?! Well done!</h2>
+            <img
+              src="./images/easter-egg.png"
+              width="100px"
+              alt=""
+            />
+          </div>
         </div>
         <div class="cv_elements_divider_last"></div>
       </fieldset>
@@ -155,10 +306,35 @@
     <footer>
       <div class="footer-spacer"></div>
 
-      <div class="footer_container">
+      <div
+        id="contact"
+        class="footer_container"
+      >
         <div class="footer-border-1"></div>
         <div class="footer-border-2"></div>
-        <div class="test2"></div>
+        <div class="footer-content">
+          <address>
+            <h2>Say hi!</h2>
+            <hr />
+            <a href="mailto:post@weskeiser.no">post@weskeiser.no</a>
+            <a href="tel:+4746121065">+47 461 21 065</a>
+          </address>
+          <div class="footer-socials">
+            <a href="https://github.com/weskeiser">
+              <img
+                src="./images/icons8-github-64.png"
+                alt="Github icon"
+              />
+            </a>
+
+            <a href="https://www.linkedin.com/in/weskeiser/">
+              <img
+                src="./images/icons8-linkedin-circled-48.png"
+                alt="Linkedin icon"
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
